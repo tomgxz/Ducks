@@ -11620,4 +11620,150 @@ body {
   background-color: var(--bs-dark) !important;
 }
 
+.header-wrapper {
+  background: var(--bs-dark);
+  z-index: 10;
+}
+.header-wrapper::after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 5rem;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-image: linear-gradient(to bottom, var(--bs-dark), transparent);
+}
+
+[data-anim-fadein] {
+  opacity: 0;
+}
+
+#main-content-row {
+  height: 100%;
+  padding-top: 97px;
+}
+#main-content-row #hero-wrapper {
+  height: calc(100vh - 97px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#main-content-row .content-slide {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#main-content-row .content-slide.content-slide-full {
+  height: calc(100vh - 97px);
+}
+
+.quote-wrapper {
+  display: flex;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.quote-wrapper .quote {
+  position: relative;
+  max-width: 42rem;
+  margin: 4rem auto;
+  align-self: center;
+}
+.quote-wrapper .quote .quote-main {
+  position: relative;
+  font-size: 2.8rem;
+  font-weight: normal;
+  line-height: 1;
+  margin: 0;
+  border: 2px solid var(--bs-secondary);
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+}
+.quote-wrapper .quote .quote-main::before {
+  content: "";
+  position: absolute;
+  width: 5rem;
+  border: 6px solid var(--bs-dark);
+  bottom: -2px;
+  left: 3.5rem;
+  z-index: 2;
+}
+.quote-wrapper .quote .quote-main::after {
+  content: "";
+  position: absolute;
+  border: 2px solid var(--bs-secondary);
+  border-radius: 0 3rem 0 0;
+  width: 3.5rem;
+  aspect-ratio: 1/1;
+  bottom: -3.5rem;
+  left: 3.5rem;
+  border-bottom: none;
+  border-left: none;
+  z-index: 3;
+}
+.quote-wrapper .quote .quote-author {
+  position: relative;
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 0;
+  padding-top: 1.2rem;
+  z-index: 1;
+  margin-left: 9rem;
+  padding-left: 12px;
+}
+.quote-wrapper .quote .quote-author:first-letter {
+  margin-left: -12px;
+}
+
+.card {
+  --bs-card-bg: #161616;
+  --bs-card-border-color: rgba(var(--bs-primary-rgb),.25);
+}
+.card .card-scrolling-text-wrapper {
+  height: 20rem;
+  overflow: hidden;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  position: relative;
+}
+.card .card-scrolling-text-wrapper::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 2rem;
+  background-image: linear-gradient(to bottom, var(--bs-card-bg), transparent);
+  z-index: 3;
+}
+.card .card-scrolling-text-wrapper::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 2rem;
+  background-image: linear-gradient(to top, var(--bs-card-bg), transparent);
+  z-index: 3;
+}
+.card .card-scrolling-text-wrapper .scrolling-text {
+  z-index: 2;
+  position: absolute;
+  top: 2rem;
+  transform: translateY(0px);
+}
+
+#slide-3 .content-slide-content {
+  width: 100%;
+}
+
 /*# sourceMappingURL=build.css.map */
