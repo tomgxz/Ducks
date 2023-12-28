@@ -1,0 +1,9 @@
+body {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  background-color: var(--bs-dark);
+}
+
+.form-control {
+  background-color: var(--bs-dark)!important;
+}

@@ -1,0 +1,1 @@
+sass ".\static\scss\build.scss" ".\static\css\build.css"
