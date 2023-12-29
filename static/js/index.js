@@ -1,7 +1,5 @@
 gsap.registerPlugin(ScrollTrigger)
 
-const REDUCEDMOTION = !!(window.matchMedia(`(prefers-reduced-motion: reduce)`) === true || window.matchMedia(`(prefers-reduced-motion: reduce)`).matches === true)
-
 import { Application } from "https://cdn.skypack.dev/@splinetool/runtime";
 
 
@@ -178,9 +176,5 @@ function onscriptload() {
         })
 
 }
-
-
-
-
 
 onscriptload()
