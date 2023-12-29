@@ -7,6 +7,7 @@ import { Application } from "https://cdn.skypack.dev/@splinetool/runtime@0.9.416
 
 function onpagerelease(app, duck, camera) {
     $(".content-slide").css({display:"flex"})
+    $(".footer").css({display:"block"})
 
     const st = {
         trigger: document.body,
@@ -147,6 +148,7 @@ function onscriptload() {
         $("[data-anim-typing]").html("&nbsp;")
         $("[data-anim-fadein]").css({opacity:0})
         $(".content-slide").css({display:"none"})
+        $(".footer").css({display:"none"})
 
     } else {
 
@@ -157,6 +159,7 @@ function onscriptload() {
         
         $("[data-anim-fadein]").css({opacity:1})
         $(".content-slide").css({display:"flex"})
+        $(".footer").css({display:"block"})
     }
 
     const canvas = document.getElementById('duck-canvas');

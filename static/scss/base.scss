@@ -1,6 +1,4 @@
 body {
-  overflow-x: hidden;
-  overflow-y: scroll;
   background-color: var(--bs-dark);
 }
 
@@ -127,6 +125,42 @@ body {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .quote-wrapper .quote .quote-main {
+    font-size: 1.8rem;
+  }
+  .quote-wrapper .quote .quote-author {
+    font-size: 1rem;
+  }
+  .quote-wrapper .quote .quote-main::before, 
+  .quote-wrapper .quote .quote-main::after {
+    left: 1.5rem;
+  }
+  .quote-wrapper .quote .quote-author {
+    margin-left: 7rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .quote-wrapper .quote .quote-main {
+    font-size: 1.2rem;
+  }
+  .quote-wrapper .quote .quote-author {
+    font-size: 1rem;
+  }
+  .quote-wrapper .quote .quote-main::before {
+    width: 3rem;
+  }
+  .quote-wrapper .quote .quote-main::after {
+    width: 2rem;
+    bottom: -2rem;
+  }
+  .quote-wrapper .quote .quote-author {
+    padding-top: .7rem;
+    margin-left: 5rem;
+  }
+}
+
 .card {
 
   --bs-card-bg: #161616;
@@ -138,6 +172,7 @@ body {
     padding-top: 2rem;
     padding-bottom: 2rem;
     position: relative;
+    pointer-events: none;
   
     &::before {
       content: "";
@@ -176,18 +211,19 @@ body {
 
 
 #duck-canvas-wrapper {
-  position:fixed;
+  position: sticky;
+  top: 97px;
 
   #duck-canvas {
     position: relative;
   }
 }
 
-#slide-1 p {
+#slide-fightclub p {
   text-shadow: 0 0 30px var(--bs-dark);
 }
 
-#slide-3 .content-slide-content {
+#slide-wikipedia .content-slide-content {
   width:100%;
 }
 
