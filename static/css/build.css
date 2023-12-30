@@ -11610,6 +11610,27 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--bs-gray-800);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--bs-gray-700);
+}
+
+* {
+  scrollbar-face-color: var(--bs-gray-800);
+  scrollbar-track-color: transparent;
+}
+
 body {
   background-color: var(--bs-dark);
 }
