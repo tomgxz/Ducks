@@ -11874,4 +11874,60 @@ body {
   grid-row-gap: 1rem;
 }
 
+.calendar-table-wrapper {
+  overflow-x: scroll;
+}
+.calendar-table-wrapper .calendar-table {
+  min-width: 900px;
+}
+.calendar-table-wrapper .calendar-table .calendar-day {
+  width: 100px;
+  min-width: 100px;
+  max-width: 100px;
+  height: 80px;
+}
+.calendar-table-wrapper .calendar-table .calendar-day .event {
+  --border-color: #ffc64d;
+  --gradient-start: #ffe7b3;
+  --gradient-end: #ffd780;
+  --color: #b37a00;
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+  background-image: linear-gradient(to bottom, var(--gradient-start) 0px, var(--gradient-end) 100%);
+  background-repeat: repeat-x;
+  color: var(--color);
+  border-width: 1px;
+  font-size: 0.75em;
+  padding: 0 0.75em;
+  line-height: 2em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 1px;
+}
+.calendar-table-wrapper .calendar-table .calendar-day .event.spacer {
+  border-color: transparent;
+  background: transparent;
+}
+.calendar-table-wrapper .calendar-table .calendar-day .event.begin {
+  border-left: 1px solid var(--border-color);
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.calendar-table-wrapper .calendar-table .calendar-day .event.end {
+  border-right: 1px solid var(--border-color);
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.calendar-table-wrapper .calendar-table .calendar-day .event.all-day {
+  --border-color: #9acfea;
+  --gradient-start: #d9edf7;
+  --gradient-end: #b9def0;
+  --color: #31708f;
+}
+.calendar-table-wrapper .calendar-table th, .calendar-table-wrapper .calendar-table td {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 /*# sourceMappingURL=build.css.map */
