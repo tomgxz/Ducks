@@ -1,1 +1,1 @@
-sass ".\static\scss\build.scss" ".\static\css\build.css"
+sass ".\site\static\scss\build.scss" ".\site\static\css\build.css"
